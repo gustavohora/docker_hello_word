@@ -36,7 +36,6 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
-docker_hello_word.py
 
 # Unit test / coverage reports
 htmlcov/
