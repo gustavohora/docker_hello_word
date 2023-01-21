@@ -15,7 +15,7 @@ COPY requirements.txt ./
 #instala libs
 RUN pip install -r requirements.txt
 #instala git
-RUN sudo apt-get install git -y
+RUN apt-get install git -y
 #clona projeto do git
 RUN git clone https://github.com/gustavohora/docker_hello_word.git
 #entra no projeto clonado
