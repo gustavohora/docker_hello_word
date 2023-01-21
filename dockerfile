@@ -10,6 +10,8 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install python3 -y
 #instala pip
 RUN apt-get install python3-pip -y
+#copia requirements.txt para nova imagem criada
+COPY requirements.txt ./
 #instala libs
 RUN pip install -r requirements.txt
 #instala git
@@ -18,8 +20,6 @@ RUN sudo apt-get install git -y
 RUN git clone https://github.com/gustavohora/docker_hello_word.git
 #entra no projeto clonado
 RUN cd docker_hello_word/script
-#copia requirements.txt para nova imagem criada
-COPY requirements.txt ./
 #copia script.py para nova imagem criada
 COPY script/docker_hello_word.py .
 #expoe docker na porta 8080
