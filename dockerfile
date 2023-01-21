@@ -1,7 +1,7 @@
 #baixa imagem do Ubuntu
 FROM ubuntu:latest
 #defini como diretorio de trabalho
-WORKDIR /home/app
+WORKDIR /home/docker_hello_word
 #instala python
 RUN apt-get update && apt-get upgrade -y
 #instala python
@@ -17,7 +17,7 @@ RUN apt-get install git -y
 #clona projeto do git
 RUN git clone https://github.com/gustavohora/docker_hello_word.git
 #entra no projeto clonado
-RUN cd docker_hello_word
+#RUN cd docker_hello_word
 #expoe docker na porta 8080
 EXPOSE 8080
 #executa script
