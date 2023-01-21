@@ -1,7 +1,7 @@
 #baixa imagem do Ubuntu
 FROM ubuntu:latest
 #instala git
-RUN sudo apt-get install git -y
+RUN sudo apt-get install git
 #cria diretorio
 RUN mkdir -p  /usr/src/app
 #instala python
