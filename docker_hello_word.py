@@ -1,3 +1,6 @@
-print("Hello Docker x-----x")
+string1 = "Hello Docker x-----x, "
+string2 = "Funcionooou!"
 
-print ("Funcionooou!")
+string3 = string1 + string2
+
+print(string3)
