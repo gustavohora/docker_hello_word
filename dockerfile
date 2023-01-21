@@ -5,13 +5,15 @@ RUN mkdir -p /usr/src/app
 #defini como diretorio de trabalho
 WORKDIR /usr/src/app
 #instala python
-RUN sudo apt-get install python3
+RUN apt-get update && apt-get upgrade -y
+#instala python
+RUN apt-get install python3 -y
 #instala pip
-RUN sudo apt-get install python3-pip
+RUN apt-get install python3-pip -y
 #instala libs
 RUN pip install -r requirements.txt
 #instala git
-RUN sudo apt-get install git
+RUN sudo apt-get install git -y
 #clona projeto do git
 RUN git clone https://github.com/gustavohora/docker_hello_word.git
 #entra no projeto clonado
