@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 #instala python
 RUN apt-get update && apt-get upgrade -y
 #instala python
-RUN apt-get install python3 -ygocker
+RUN apt-get install python3 -y
 #instala pip
 RUN apt-get install python3-pip -y
 #copia requirements.txt para nova imagem criada
