@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 #instala python
 RUN apt-get update && apt-get upgrade -y
 #instala python
-RUN apt-get install python3 -y
+RUN apt-get install python3 -ygocker
 #instala pip
 RUN apt-get install python3-pip -y
 #copia requirements.txt para nova imagem criada
@@ -25,4 +25,4 @@ COPY script/docker_hello_word.py .
 #expoe docker na porta 8080
 EXPOSE 8080
 #executa script.py
-CMD ["python", "docker_hello_word.py"]
+CMD ["python", "script/docker_hello_word.py"]
