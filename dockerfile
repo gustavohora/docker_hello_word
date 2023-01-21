@@ -13,13 +13,13 @@ WORKDIR /usr/src/app
 #clona projeto do git
 RUN git clone https://github.com/gustavohora/docker_hello_word.git
 #entra no projeto clonado
-RUN cd script
+RUN cd docker_hello_word/script
 #copia requirements.txt para nova imagem criada
 COPY requirements.txt ./
 #insala libs
 RUN pip install -r requirements.txt
 #copia script.py para nova imagem criada
-COPY docker_hello_word.py .
+COPY script/docker_hello_word.py .
 #expoe docker na porta 8080
 EXPOSE 8080
 #executa script.py
